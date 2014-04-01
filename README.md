@@ -36,5 +36,5 @@ workstation computer, which has two Intel Xeon E5-2687W (3.1GHz, 1600MHz) and 64
 
 Author: Ming-Ming Cheng(程明明) removethisifyouarehuman-cmm.thu@gmail.com
 Linux Author: Shuai Zheng (Kyle,郑帅) removethisifyouarehuman-szhengcvpr@gmail.com
-Please find more information from http://kylzheng.org/objectness/
+Please find more information from http://kylezheng.org/objectness/
 Date: 19, February 
