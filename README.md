@@ -33,6 +33,15 @@ version, while it runs at 1111 FPS(frame per second) at Ubuntu 12.04 with a Dell
 workstation computer, which has two Intel Xeon E5-2687W (3.1GHz, 1600MHz) and 64 GB 
 1600MHz DDR3 Memory.
 
+FAQ
+1. To run the code, you have to install OpenCV in the your ubuntu linux system. 
+We specify the dependencies on opencv at
+"
+include_directories(/usr/local/include)
+link_directories(/usr/local/lib)
+"
+2. You can use/debug/change the code with Qt Creator IDE on ubuntu/mac.
+
 
 Author: Ming-Ming Cheng(程明明) removethisifyouarehuman-cmm.thu@gmail.com
 Linux Author: Shuai Zheng (Kyle,郑帅) removethisifyouarehuman-szhengcvpr@gmail.com
