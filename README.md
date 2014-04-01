@@ -18,6 +18,9 @@ The original author Ming-Ming Cheng has already released the source code for
 windows 64-bit platform. In this library, we intend to release the code for the 
 linux/mac/windows users. You can maintain the code with Qt Creator IDE.
 
+The original windows code can be download from the link.
+http://mmcheng.net/bing/
+
 In order to make the code running as the original version in windows, you need
 to download the images/annotations PASCAL VOC 2007 data from the website.
 (http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2007/#testdata)
