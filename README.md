@@ -2,6 +2,9 @@ Objectness
 ==========
 BING Objectness proposal estimator linux/mac/windows version implementation, 
 runs at 1000 FPS.
+Objectness Proposal estimator运行代码，已经在linux/mac/windows下测试成功，
+执行速度超过1000帧每秒。
+
 
 This is the 1000 FPS BING objectness linux version library for efficient 
 objectness proposal estimator following the CVPR 2014 paper BING, please 
