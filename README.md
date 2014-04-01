@@ -34,7 +34,7 @@ workstation computer, which has two Intel Xeon E5-2687W (3.1GHz, 1600MHz) and 64
 1600MHz DDR3 Memory.
 
 
-Author: Ming-ming Cheng removethisifyouarehuman-cmm.thu@gmail.com
-Linux Author: Shuai Zheng (Kyle) removethisifyouarehuman-szhengcvpr@gmail.com
+Author: Ming-Ming Cheng(程明明) removethisifyouarehuman-cmm.thu@gmail.com
+Linux Author: Shuai Zheng (Kyle,郑帅) removethisifyouarehuman-szhengcvpr@gmail.com
 Please find more information from http://kylzheng.org/objectness/
 Date: 19, February 
