@@ -794,10 +794,11 @@ void Objectness::evaluatePerImgRecall(const vector<vector<Vec4i>> &boxesTests, C
 		const int gtNumCrnt = boxesGT.size();
 		vecI detected(gtNumCrnt);
 		vecD score(gtNumCrnt);
+		double sumDetected = 0, abo = 0;
 		for (int j = 0; j < NUM_WIN; j++){
 			if (j >= (int)boxes.size()){
-				recalls[j] = recalls[j - 1];
-				avgScore[j] = avgScore[j - 1];
+				recalls[j] += sumDetected/gtNumCrnt;
+				avgScore[j] += abo/gtNumCrnt;
 				continue;
 			}
 
@@ -806,7 +807,7 @@ void Objectness::evaluatePerImgRecall(const vector<vector<Vec4i>> &boxesTests, C
 				score[k] = max(score[k], s);
 				detected[k] = score[k] >= 0.5 ? 1 : 0;
 			}
-			double sumDetected = 0, abo = 0;
+			sumDetected = 0, abo = 0;
 			for (int k = 0; k < gtNumCrnt; k++)	
 				sumDetected += detected[k], abo += score[k];
 			recalls[j] += sumDetected/gtNumCrnt;
