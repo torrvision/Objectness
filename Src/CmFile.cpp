@@ -155,7 +155,8 @@ vecS CmFile::loadStrList(CStr &fName)
     vecS strs;
     while(getline(fIn, line) && line.size()){
         unsigned sz = line.size();
-        line.resize(sz - 1);
+        // line.resize(sz - 1); -- I loose last symbol
+        line.resize(sz);
         strs.push_back(line);
     }
     return strs;
