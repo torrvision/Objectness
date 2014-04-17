@@ -155,8 +155,8 @@ vecS CmFile::loadStrList(CStr &fName)
     vecS strs;
     while(getline(fIn, line) && line.size()){
         unsigned sz = line.size();
-        // line.resize(sz - 1); -- I loose last symbol
-        line.resize(sz);
+        line.resize(sz - 1); //Please use script to convert the VOC format data into the OpenCV format data
+        //line.resize(sz);
         strs.push_back(line);
     }
     return strs;
