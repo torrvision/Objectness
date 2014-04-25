@@ -10,8 +10,9 @@ add_library(BLAS LibLinear/blas/blas.h LibLinear/blas/blasp.h LibLinear/blas/dax
 find_package( OpenCV REQUIRED )
 if(OpenCV_FOUND)
  include_directories( ${OpenCV_INCLUDE_DIRS} )
- target_link_libraries( ObjectDetect ${OpenCV_LIBS} )
+ target_link_libraries( ${OpenCV_LIBS} )
 endif( OpenCV_FOUND )
+##if this does not work, then try to uncomment the things below.
 ##include_directories(/usr/local/include)
 ##link_directories(/usr/local/lib)
 list( APPEND CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS} -fopenmp -ftree-vectorize")
