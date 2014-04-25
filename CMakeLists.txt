@@ -7,14 +7,14 @@ add_library(LIBLINEAR LibLinear/linear.cpp LibLinear/linear.h LibLinear/train.c 
 add_library(BLAS LibLinear/blas/blas.h LibLinear/blas/blasp.h LibLinear/blas/daxpy.c LibLinear/blas/ddot.c LibLinear/blas/dnrm2.c LibLinear/blas/dscal.c)
 
 #OPENCV
-find_package( OpenCV REQUIRED )
-if(OpenCV_FOUND)
- include_directories( ${OpenCV_INCLUDE_DIRS} )
- target_link_libraries( ${OpenCV_LIBS} )
-endif( OpenCV_FOUND )
+include_directories(/usr/local/include)
+link_directories(/usr/local/lib)
 ##if this does not work, then try to uncomment the things below.
-##include_directories(/usr/local/include)
-##link_directories(/usr/local/lib)
+##find_package( OpenCV REQUIRED )
+##if(OpenCV_FOUND)
+## include_directories( ${OpenCV_INCLUDE_DIRS} )
+## target_link_libraries(BING_linux ${OpenCV_LIBS} )
+##endif( OpenCV_FOUND )
 list( APPEND CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS} -fopenmp -ftree-vectorize")
 #list( APPEND CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS} -fopenmp -ftest-coverage -fprofile-arcs")
 
