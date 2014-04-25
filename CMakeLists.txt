@@ -7,10 +7,10 @@ add_library(LIBLINEAR LibLinear/linear.cpp LibLinear/linear.h LibLinear/train.c 
 add_library(BLAS LibLinear/blas/blas.h LibLinear/blas/blasp.h LibLinear/blas/daxpy.c LibLinear/blas/ddot.c LibLinear/blas/dnrm2.c LibLinear/blas/dscal.c)
 
 #OPENCV
-FIND_PACKAGE( OpenCV REQUIRED )
-IF(OpenCV_FOUND)
- INCLUDE_DIRECTORIES( ${OpenCV_INCLUDE_DIRS} )
- TARGET_LINK_LIBRARIES( ObjectDetect ${OpenCV_LIBS} )
+find_package( OpenCV REQUIRED )
+if(OpenCV_FOUND)
+ include_directories( ${OpenCV_INCLUDE_DIRS} )
+ target_link_libraries( ObjectDetect ${OpenCV_LIBS} )
 ENDIF()
 ##include_directories(/usr/local/include)
 ##link_directories(/usr/local/lib)
