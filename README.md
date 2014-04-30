@@ -61,5 +61,5 @@ This message indicates that you do not have correct path to read the preprocesse
 
 Author: Ming-Ming Cheng(程明明) removethisifyouarehuman-cmm.thu@gmail.com
 Linux Author: Shuai Zheng (Kyle,郑帅) removethisifyouarehuman-szhengcvpr@gmail.com
-Please find more information from http://kylezheng.org/objectness/
+Please find more information from http://kylezheng.org/objectproposal/
 Date: 19, February 
