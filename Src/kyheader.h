@@ -2,8 +2,11 @@
 // or project specific include files that are used frequently, but
 // are changed infrequently
 //
-
 #pragma once
+#pragma warning(disable: 4996)
+#pragma warning(disable: 4995)
+#pragma warning(disable: 4805)
+#pragma warning(disable: 4267)
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
@@ -12,11 +15,6 @@
 //#include <SDKDDKVer.h>
 #include <stdio.h>
 
-#pragma once
-#pragma warning(disable: 4996)
-#pragma warning(disable: 4995)
-#pragma warning(disable: 4805)
-#pragma warning(disable: 4267)
 
 #include <assert.h>
 #include <string>
