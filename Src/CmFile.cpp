@@ -141,11 +141,11 @@ bool CmFile::MkDir(CStr &_path)
     for (int i = 0; buffer[i] != 0; i ++) {
         if (buffer[i] == '\\' || buffer[i] == '/') {
             buffer[i] = '\0';
-            mkdir(buffer, 0);
+            mkdir(buffer, 0755);
             buffer[i] = '/';
         }
     }
-    return mkdir(_S(_path), 0);
+    return mkdir(_S(_path), 0755);
 #endif
 }
 vecS CmFile::loadStrList(CStr &fName)
