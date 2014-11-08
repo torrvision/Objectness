@@ -35,7 +35,7 @@ workstation computer, which has two Intel Xeon E5-2687W (3.1GHz, 1600MHz) and 64
 
 FAQ
 
-1. Why it shows slower speed than what you said?
+0. Why it shows slower speed than what you said?
 Please ensure that you have enable release mode, in Ubuntu 14.04 (or other linux system), do this:
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ../
@@ -44,15 +44,15 @@ If you would like to enjoy the debug information, please make sure you do this:
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ../
 
-2. To run the code, you have to install OpenCV in the your ubuntu linux system. 
+1. To run the code, you have to install OpenCV in the your ubuntu linux system. 
 We specify the dependencies on opencv at
 "
 include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 "
-3. You can use/debug/change the code with Qt Creator IDE on ubuntu/mac.
+2. You can use/debug/change the code with Qt Creator IDE on ubuntu/mac.
 
-4. "Invalidate class name in /home/yukin/dev/Objectness/Src/DataSetVOC.cpp:125 OpenCV Error: Assertion failed (Invalidate class name ) in loadBox, file /home/yukin/dev/Objectness/Src/DataSetVOC.cpp, line 125 terminate called after throwing an instance of 'cv::Exception' what(): /home/yukin/dev/Objectness/Src/DataSetVOC.cpp:125: error: (-215) Invalidate class name
+3. "Invalidate class name in /home/yukin/dev/Objectness/Src/DataSetVOC.cpp:125 OpenCV Error: Assertion failed (Invalidate class name ) in loadBox, file /home/yukin/dev/Objectness/Src/DataSetVOC.cpp, line 125 terminate called after throwing an instance of 'cv::Exception' what(): /home/yukin/dev/Objectness/Src/DataSetVOC.cpp:125: error: (-215) Invalidate class name
 in function loadBox Aborted I tracked into the code and found out that the fName extracted in the loadBBoxes function seems to be wrong: 'MYDATAPATH/Annotations/00000.yml'. And it seems like ''ImageSets/Main/train.txt" does not exist "
 
 This message shows that you do not have correct path for the VOC files, or you do not have them in your PC. You need to download all the files properly from VOC website, by which i mean that you need to download all files from:
@@ -60,7 +60,7 @@ http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2007/VOCtest_06-Nov-2007.tar
 http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
 You also need to convert all the xml files into yml. You might find XML2YML tools to do so or you can use the tool we put on here.
 
-5. "OpenCV Error: Assertion failed (matRead(_modelName + ".xP", xP1f) && matRead(_modelName + ".xN", xN1f)) in trainStageI, file /home/yukin/dev/Objectness/Src/Objectness.cpp, line 555
+4. "OpenCV Error: Assertion failed (matRead(_modelName + ".xP", xP1f) && matRead(_modelName + ".xN", xN1f)) in trainStageI, file /home/yukin/dev/Objectness/Src/Objectness.cpp, line 555
 terminate called after throwing an instance of 'cv::Exception'
 what(): /home/yukin/dev/Objectness/Src/Objectness.cpp:555: error: (-215) matRead(_modelName + ".xP", xP1f) && matRead(_modelName + ".xN", xN1f) in function trainStageI"
 
