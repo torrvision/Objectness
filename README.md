@@ -34,6 +34,7 @@ workstation computer, which has two Intel Xeon E5-2687W (3.1GHz, 1600MHz) and 64
 1600MHz DDR3 Memory.
 
 FAQ
+
 1. Why it shows slower speed than what you said?
 Please ensure that you have enable release mode, in Ubuntu 14.04 (or other linux system), do this:
 mkdir build && cd build
