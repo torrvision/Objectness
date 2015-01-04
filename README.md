@@ -17,7 +17,7 @@ consider to cite and refer to this paper.
 
 The original author Ming-Ming Cheng has already released the source code for 
 windows 64-bit platform. In this library, we intend to release the code for the 
-linux/mac/windows users. You can maintain the code with Qt Creator IDE.
+linux/mac/iOS users. You can maintain the code with Qt Creator IDE.
 
 Please find the original windows code / FAQ / Paper from this link:
 http://mmcheng.net/bing/
