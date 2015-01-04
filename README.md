@@ -1,7 +1,7 @@
 Objectness Proposal Generator with BING
 ==========
 BING Objectness proposal estimator Linux Ubuntu 14.04/Mac OSX Yosemite/iOS 8.1 version implementation, 
-runs at 1000 FPS at a Dell 7600 workstation with Linux Ubuntu 14.04. This code is under BSD License.
+runs at 1000 FPS at a Dell 7600 workstation with Linux Ubuntu 14.04.
 
 ## Introduction
 This is the 1000 FPS BING objectness linux version library for efficient 
