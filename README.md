@@ -17,16 +17,24 @@ make the folders similar to the VOC 2007 one.
 
 ## Introduction
 This is the 1000 FPS BING objectness linux version library for efficient 
-objectness proposal estimator following the CVPR 2014 paper BING, please 
-consider to cite and refer to this paper.
-
+objectness proposal estimator,We would appreciate if you could cite and refer to 
+the papers below.
+```
 @inproceedings{BingObj2014,
   title={{BING}: Binarized Normed Gradients for Objectness Estimation at 300fps},
   author={Ming-Ming Cheng and Ziming Zhang and Wen-Yan Lin and Philip H. S. Torr},
   booktitle={IEEE CVPR},
   year={2014},
 }
-
+```
+```
+@inproceedings{depthobjectproposals_GCPR2015, 
+author = {Shuai Zheng and Victor Adrian Prisacariu and Melinos Averkiou and Ming-Ming Cheng and Niloy J. Mitra and Jamie Shotton and Philip H. S. Torr and Carsten Rother}, 
+title = {Object Proposal Estimation in Depth Images using Compact 3D Shape Manifolds}, 
+booktitle = {German Conference on Pattern Recognition (GCPR)},
+year = {2015} 
+}
+```
 The original author Ming-Ming Cheng has already released the source code for 
 windows 64-bit platform. In this library, we intend to release the code for the 
 linux/mac/iOS users. You can maintain the code with Qt Creator IDE.
