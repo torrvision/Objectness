@@ -2,6 +2,8 @@ Objectness Proposal Generator with BING
 ==========
 BING Objectness proposal estimator Linux Ubuntu 14.04/Mac OSX Yosemite/iOS 8.1 version implementation, 
 runs at 1000 FPS at a Dell 7600 workstation with Linux Ubuntu 14.04.
+![sample](BING.png)
+
 ![sample](bing_vs_convnet.jpg)
 
 
