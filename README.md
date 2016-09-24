@@ -1,8 +1,8 @@
 Objectness Proposal Generator with BING
-
+==========
 [![License (3-Clause BSD)](https://img.shields.io/badge/license-BSD%203--Clause-brightgreen.svg?style=flat-square)](http://opensource.org/licenses/BSD-3-Clause)
 
-==========
+
 BING Objectness proposal estimator Linux Ubuntu 14.04/Mac OSX Yosemite/iOS 8.1 version implementation, 
 runs at 1000 FPS at a Dell 7600 workstation with Linux Ubuntu 14.04.
 ![sample](BING.png)
