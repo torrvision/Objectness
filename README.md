@@ -53,7 +53,7 @@ http://mmcheng.net/bing/
 ## FAQ
 In order to make the code running as the original version in windows, you need
 to download the images/annotations PASCAL VOC 2007 data from the website.
-(http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2007/#testdata)
+(http://host.robots.ox.ac.uk/pascal/VOC/voc2007/index.html#testdata)
 
 We have tested the code, it produces the same accuracy results as the original windows
 version, while it runs at 1111 FPS(frame per second) at Ubuntu 12.04 with a Dell T7600 
